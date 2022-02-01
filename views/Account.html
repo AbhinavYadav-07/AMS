@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Create Account</title>
+
+    <link rel="stylesheet" href='{% static '/account.css' %}'>
+
+</head>
+{% block content %}
+{% endblock %}
+<body>
+          <h1>Let's get started</h1>
+  <div class="form">
+    <div class="form1">
+      <h2>Personal</h2>
+      <form action="myprofile.html">
+        <label for="FirstName"><strong>Name</strong></label>
+        <input type="text" placeholder="First name" id="FirstName">
+        <input type="text" placeholder="Last name" id="FirstName"><br>
+        <label for="Number"><strong>Phone number</strong></label>
+        <input type="text" placeholder="Phone number" id="Number"><br>
+        <label for="Dob"><strong>D.O.B</strong></label>
+        <input type="date" placeholder="D.O.B" id="Dob"><br>
+        <label for="gender"><strong>Gender</strong></label>
+       <select name="gender">
+         <option value="Male">Male</option>
+         <option value="Female">Female</option>
+         <option value="TransGender">TransGender</option>
+       </select><br>
+       <label for="Occupation"><strong>Occupation</strong></label>
+       <input type="text" placeholder="Occupation" id="Occupation">
+       <input type="text" placeholder="Designation" id="Occupation"><br>
+       <label for="Nationality"><strong>Nationality</strong></label>
+       <input type="text" placeholder="Nationality" id="Nationality"><br>
+       <label for="Religion"><strong>Religion</strong></label>
+       <input type="text" placeholder="Religion" id="Religion"><br>
+       <label for="Flat number"><strong>Flat number</strong></label>
+       <input type="text" placeholder="Flat number" id="Flat number">
+       <label for="Block"><strong>Block</strong></label>
+      <select name="Block">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select><br>
+      <label for="Password"><strong>Password</strong></label>
+      <input type="text" placeholder="Password" id="Password">
+      <input type="text" placeholder="Confirm Password" id="Confirm Password"><br>
+      <button type="submit" class="button"  onclick="window.alert('Account created Successfully')">Sign Up</button>
+      </form>
+</div>
+</div>
+</body>
+</html>

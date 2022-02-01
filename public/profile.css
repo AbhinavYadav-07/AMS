@@ -1,0 +1,520 @@
+body{
+background-image: url("E://New folder//apartment//New folder//creative-clay-textured-background-blue-border-diy-tie-dye-art-abstract-style.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.out{
+  width:100%;
+  height: 7vh;
+  background-color: black;
+  margin: auto;
+  border-radius:1px;
+  float: left;
+  border-radius: 5px;
+}
+.button
+{
+   background-color: black;
+   border: none;
+   color: white;
+   float: left;
+   padding: 10px 27px;
+   text-decoration: none;
+   margin-left: 6px;
+   margin-top: 7px;
+   margin-bottom: 0px;
+   cursor: pointer;
+   border-radius: 5px;
+   width:10%;
+   font-size: 1vmax;
+   position: center;
+}
+
+.button:hover
+{
+  background-color: grey;
+}
+
+
+.column1 {
+  float: left;
+  width: 23%;
+  padding: 10px;
+  height: 86vh; /* Should be removed. Only for demonstration */
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.column1T
+{
+  width:80%;
+  padding:10px;
+  height: 39vh;
+  margin-top: 2px;
+  padding:2px;
+}
+
+
+.column1B
+{
+  margin-top: 14px;
+  width:80%;
+  padding:10px;
+  height: 43vh;
+  padding: 2px;
+}
+
+
+.column2 {
+  float: left;
+  width: 46%;
+  padding: 10px;
+  height: 86vh; /* Should be removed. Only for demonstration */
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+
+
+.column3 {
+  float: left;
+  width: 27%;
+  padding: 10px;
+  height: 86vh; /* Should be removed. Only for demonstration */
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.column3T
+{
+  width:80%;
+  padding: 10px;
+  height: 39vh;
+  margin-top: 2px;
+  padding: 2px;
+}
+
+
+.column3B
+{
+    margin-top: 14px;
+  width:80%;
+  padding:10px;
+  height: 43vh;
+  padding: 2px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column{
+  margin-top:50px;
+  margin-left:auto;
+  margin-right: auto;
+  width: 46%;
+  padding: 10px;
+  height: 86vh; /* Should be removed. Only for demonstration */
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.text
+{
+ width:97%;
+ height: 33.2vh;
+ border-radius: 5px;
+ padding-bottom: 18px;
+ margin:auto;
+ box-shadow: 10px 5px 10px 3px #090b6f85;
+ background-color: rgba(0,0,0,0);
+ color:black;
+ font-size: 1.03vmax;
+}
+
+.problem_box
+{
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 10px 27px;
+   text-decoration: none;
+    margin-top: 7px;
+    margin-right: 4px;
+   cursor: pointer;
+   border-radius: 1px;
+   float: right;
+   font-size: 1.7vh;
+   border-radius: 20px;
+   width: 97%;
+    box-shadow: 10px 5px 10px 2px #090b6f85;
+}
+
+.problem_box:hover{
+  background-color: #008000;
+}
+
+
+input[type="text"]
+{
+  border-radius: 5px;
+  height: 3vh;
+  text-indent: 10px;
+  width:48%;
+  margin-left: 7px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: rgb(23,23,20);
+  color:white;
+  padding: auto;
+}
+
+
+h2.one{
+  text-align: center;
+  font-size: 2vmax;
+  color:white;
+  font-style:bold;
+  margin-top:10px;
+  padding: 3px;
+}
+
+h2{
+  text-align: center;
+  font-size: 2vmax;
+  color:blackS;
+  font-style:bold;
+}
+
+h2.p{
+  text-align: left;
+  font-size: 2vmax;
+  color:white;
+  font-style:bold;
+}
+
+label{
+  margin-left: 5%;
+  margin-top: 10%;
+  font-size: 1.3vmax;
+  font-weight: bold;
+}
+
+p{
+  margin-left: 5%;
+  margin-top: 2PX;
+  font-size: 1.3vmax;
+  font-weight: bold;
+  color:white;
+}
+
+p.p{
+  margin: auto;
+  margin-top: 10px;
+  font-size: 1.3vmax;
+  font-weight: bold;
+  padding: 5px;
+}
+
+input[type=date]
+{
+  height: 4vh;
+  width:45%;
+  margin-left: 2px;;
+  margin-right: auto;
+  margin-top: 3.7%;
+  text-align:center;
+  border: none;
+  border-bottom: 3px solid black;
+  box-shadow: 2px 2px 2px 2px grey;
+  border-radius: 5px;
+  background-color: red;
+  color: black;
+  font-size: 1.03vmax;
+}
+
+
+select{
+  height: 5vh;
+  width:8%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.7%;
+  text-align:center;
+  border: none;
+  border-bottom: 2px solid black;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+}
+
+input[type="time"]{
+  height: 4vh;
+  width:40%;
+  margin-left: 2px;;
+  margin-right: auto;
+  margin-top: 3.7%;
+  text-align:center;
+  border: none;
+  border-bottom: 2px solid black;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  border-radius: 5px;
+  background-color: rgb(23,23,20);
+  color:grey;
+}
+
+h3{
+  color:white;
+}
+
+.gButton
+{
+   background-color: tomato;
+   border: none;
+   color: white;
+   padding: 10px 27px;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 1px;
+   font-size: 1.8vh;
+   border-radius: 20px;
+   width:50%;
+   margin-left: 60px;
+   padding: auto;
+}
+.gButton:hover
+{
+  background-color: red;
+}
+.vButton
+{
+   background-color: tomato;
+   border: none;
+   color: white;
+   padding: 10px 27px;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 1px;
+   font-size: 1.8vh;
+   border-radius: 20px;
+   width:50%;
+   padding: auto;
+   float: left;
+}
+.vButton:hover
+{
+  background-color: red;
+}
+
+select.myselect{
+       background-color: black;
+     border: none;
+     color: white;
+     float: left;
+     padding: 10px 27px;
+     text-decoration: none;
+     margin-left: 6px;
+     margin-top: 7px;
+     margin-bottom: 0px;
+     cursor: pointer;
+     border-radius: 5px;
+     width:10%;
+     font-size: 1vmax;
+     position: center;
+  }
+
+select.myselect option{
+  padding:0 10px;
+  text-align: left;
+}
+
+
+select.myselect2{
+       background-color: white;
+     border: none;
+     color: black;
+     padding:auto;
+     text-decoration: none;
+     margin-top: 7px;
+     margin-bottom: 0px;
+     cursor: pointer;
+     border-radius: 5px;
+     width:16px;
+     font-size: 1vmax;
+     position: center;
+     height: 3.8vh;
+  }
+
+select.myselect2 option{
+  padding:0 10px;
+  text-align: left;
+}
+
+select.visitors{
+      background-color: black;
+     border: none;
+     color: white;
+     float: left;
+     padding: 10px 27px;
+     text-decoration: none;
+
+     margin-top: 7px;
+     margin-bottom: 0px;
+     cursor: pointer;
+     border-radius: 5px;
+     width:20%;
+     font-size: 1vmax;
+
+  }
+
+select.visitors option{
+  padding:0 10px;
+  text-align: left;
+}
+
+.columnTenant{
+  margin-top:50px;
+  margin-left:auto;
+  margin-right: auto;
+  width: 35%;
+  padding: 10px;
+  height: 43vh; /* Should be removed. Only for demonstration */
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+
+
+input[type="text"].Tenant
+{
+  border-radius: 5px;
+  height: 4vh;
+  text-indent: 10px;
+  width:30%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: white;
+  color:black;
+  padding: auto;
+}
+
+input[type="text"].Tenant:hover
+{
+  background-color: linen;
+}
+
+.labelT{
+  color:white;
+  font-size: 1.02vmax;
+}
+.tButton
+{
+   background-color: tomato;
+   border: none;
+   color: white;
+   padding: 10px 27px;
+   text-decoration: none;
+   margin-top: 7%;
+   margin-left:35%;
+   cursor: pointer;
+   border-radius: 1px;
+   font-size: 1.8vh;
+   border-radius: 20px;
+   width:30%;
+   padding: auto;
+
+
+}
+.tButton:hover
+{
+  background-color: red;
+}
+
+p.tenant{
+  text-align: center;
+  font-size: 2vmax;
+
+}
+
+
+.columnEvent{
+  margin-top:50px;
+  margin-left:auto;
+  margin-right: auto;
+  width: 35%;
+  padding: 10px;
+  height: 66vh; /* Should be removed. Only for demonstration */
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+
+input[type="time"].event{
+  height: 4vh;
+  width:30%;
+  margin-left: 2px;;
+  margin-right: auto;
+  margin-top: 3.7%;
+  text-align:center;
+  border: none;
+  border-bottom: 2px solid black;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  border-radius: 5px;
+background-color: white;
+  color:black;
+}
+
+input[type="time"].event:hover
+{
+  background-color:linen;
+}
+
+input[type="date"].event{
+  height: 4vh;
+  width:30%;
+  margin-left: 2px;;
+  margin-right: auto;
+  margin-top: 3.7%;
+  text-align:center;
+  border: none;
+  border-bottom: 2px solid black;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  border-radius: 5px;
+  background-color: white;
+  color:black;
+}
+
+input[type="date"].event:hover
+{
+  background-color:linen;
+}
+
+input[type="text"].event{
+  height: 4vh;
+  width:30%;
+  margin-left: 2px;;
+  margin-right: auto;
+  margin-top: 3.7%;
+  text-align:center;
+  border: none;
+  border-bottom: 2px solid black;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  border-radius: 5px;
+  background-color: white;
+  color:black;
+  text-align: left;
+}
+
+input[type="text"].event:hover
+{
+  background-color: linen;
+}
