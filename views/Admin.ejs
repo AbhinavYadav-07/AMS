@@ -2,23 +2,20 @@
 <html ang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-         <link rel="stylesheet" type="text/css" href="E:\New folder\apartment\profile.css">
+         <link rel="stylesheet" type="text/css" href="profile.css">
   </head>
   <body>
     <div class="out">
       <form>
         <label for="guard">
-             <select class="myselect" name="guard" onchange="location:this.value">
-          <option value="GuardProfile.html" onclick="E://New folder//apartment//GuardProfile.html">Add Guard</option>
-          <option value="Remove Guard">Remove Guard</option>
-          <option value="Update">Update</option>
-          </select>
-
-        <button type="submit" class="button" formaction=templates\Account.html>Add Tenant</button>
-        <button type="submit" class="button" formaction="E://New folder//apartment//TenantUpdate.html">Settings</button>
-          <button type="submit" class="button" formaction="E://New folder//apartment//event.html">Create Event</button>
-          <button type="submit" class="button" formaction="E://New folder//apartment//event.html">Complaints</button>
-          <button type="submit" class="button" formaction="E://New folder//apartment//event.html"  onclick="window.alert('Log out Successful')">Log out</button>
+             <!-- <select class="myselect" name="guard" onchange="location:this.value" onclick="location.href='/'"> -->
+          <a type="submit" class="button" onclick="location.href='/GuardAccount'">Add Guard</a>
+          <a type="submit" class="button" onclick="location.href='/Admin'">Remove Guard</a>
+          <a type="submit" class="button" onclick="location.href='/Admin'">Update</a>
+          <a type="submit" class="button" onclick="location.href='/Account'">Add Tenant</a>
+          <a type="submit" class="button" onclick="location.href='/event'">Create Event</a>
+          <a type="submit" class="button" onclick="location.href='/myprofile'">Complaints</a>
+          <a type="submit" class="button" onclick="location.href='/'">Log out</a>
       </form>
       </div><br><br><br>
 

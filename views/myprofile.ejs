@@ -2,17 +2,15 @@
 <html ang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-         <link rel="stylesheet" type="text/css" href="E:\New folder\apartment\profile.css">
+         <link rel="stylesheet" type="text/css" href="profile.css">
   </head>
   <body>
 <div class="out">
   <form>
-    <button type="submit" class="button" formaction="E:\New folder\apartment\GuardProfile.html">Guard</button>
-    <button type="submit" class="button" formaction="E:\New folder\apartment\visitor.html">Visitors</button>
-    <button type="submit" class="button">Bills</button>
-    <button type="submit" class="button" formaction="E://New folder//apartment//TenantUpdate.html">Settings</button>
-      <button type="submit" class="button"  formaction="E://New folder//apartment//event.html">Create Event</button>
-             <button type="submit" class="button" formaction="E://New folder//apartment//event.html"  onclick="window.alert('Log out Successful')">Log out</button>
+    <a type="submit" class="button" onclick="location.href='/Gurad'">Guard</a>
+    <a type="submit" class="button" onclick="location.href='/visitor'">Visitors</a>
+      <a type="submit" class="button"  onclick="location.href='/event'">Create Event</a>
+      <a type="submit" class="button" onclick="location.href='/'">Log out</a>
   </form>
   </div><br><br><br>
 
@@ -61,7 +59,7 @@
     </div>
     <div class="column3B">
       <textarea class="text" placeholder="Write something..."></textarea>
-      <button type="submit" class="problem_box"><strong>Submit</strong></button>
+      <a type="submit" class="problem_box" onclick="location.href='/myprofile'"><strong>Submit</strong></a>
     </div>
   </div>
     </div>
