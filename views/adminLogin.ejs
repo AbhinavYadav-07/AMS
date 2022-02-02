@@ -6,6 +6,7 @@
        <link rel="stylesheet" type="text/css" href="apartment.css">
   </head>
   <body>
+    <form action="/adminLogin" method="post">
     <div class="bg-image"></div>
     <div class="form">
       <div class="form1">
@@ -13,10 +14,10 @@
       <p>Welcome to the Apartment,</p>
         <p>Log in with your credentials.</p>
         <h1 class="Log">Admin Log in</h1>
-        <form action="E://New folder//apartment//Admin.html">
-          <input type="text" placeholder="User name"><br><br>
-          <input type="text" placeholder="password"><br><br>
-          <a type="submit" class="submit" onclick="location.href='/Admin'">Submit</a>
+       
+          <input type="text" name='username' placeholder="User name"><br><br>
+          <input type="text" name='password' placeholder="password"><br><br>
+          <button type="submit" class="submit" onclick="location.href='/Admin'">Submit</button>
           <a type="submit" class="button">Forgot Password</a><br><br>
           <a type="submit" class="button2" formaction="login.html" onclick="location.href='/'">Tenant</a><br><br><br>
           <a type="submit" class="button2" formaction="guardLogin.html" onclick="location.href='/guardLogin'">Guard</a>

@@ -13,10 +13,10 @@
       <p>Welcome to the Apartment,</p>
         <p>Log in with your credentials.</p>
         <h1 class="Log">Guard Log in</h1>
-        <form action="E://New folder//apartment//Gurad.html">
-          <input type="text" placeholder="User name"><br><br>
-          <input type="text" placeholder="password"><br><br>
-          <a type="submit" class="submit" onclick="location.href='/Gurad'">Submit</a>
+        <form action="/guardLogin" method="post">
+          <input type="text" name='username' placeholder="User name"><br><br>
+          <input type="password" name='password' placeholder="password"><br><br>
+          <button type="submit" class="submit" onclick="location.href='/Gurad'">Submit</button>
           <button type="submit" class="button" >Forgot Password</button><br><br>
           <a type="submit" class="button2" onclick="location.href='/'">Tenant</a><br><br><br>
           <a type="submit" class="button2" onclick="location.href='/adminLogin'">Admin</a>

@@ -5,54 +5,70 @@
          <link rel="stylesheet" type="text/css" href="\profile.css">
   </head>
   <body>
-
-  <div class="row" style="margin-top:4%">
-    <div class="column1">
-      <div class="column1T">
-          <img id=""><p>your image</p>
-      </div>
+    <div class="table-data">
+      <h2>List Of Guard</h2>
+          <table border="1">
+       <tr>     
+      <th>NAME</th>
+      <th>SALARY</th>
+      <th>GATE_NO</th>
+      <th>D.O.B</th>
+      <th>GENDER</th>
+      <th>ADDRESS</th>
+      <th>NUMBER</th>
+          </tr>
+  
+  <%
+  if(guard.length!=0){
+  var i=1;
+  guard.forEach(function(data){
+  %>
+  <tr>
+      <!-- <td><%=i; %></td> -->
+      <td><%=data.NAME %></td>
+      <td><%=data.SALARY %></td>
+      <td><%=data.GATE_NO%></td>
+      <td><%=data.DOB %></td>
+      <td><%=data.GENDER %></td>
+      <td><%=data.ADDRESS %></td>
+      <td><%=data.PHONE_NO %></td>
+      <!-- <td><a href="/VISITOR/delete/<%=data.NAME%>">Delete</a></td> -->
+  </tr>
+  <%  i++; }) %>
+  <% } else{ %>
+      <tr>
+          <td colspan="7">No Data Found</td>
+      </tr>
+  <% } %>
+</table>
+</div>
     </div>
-    <div class="column2">
-      <h1 align="center">Guard</h1>
-      <h2 class="p">Name</h2>
-        <h3>Basic</h3>
-      <p class="p">Salary</p>
-      <p class="p">Gate</p>
-      <p class="p">D.o.b</p>
-      <p class="p">Gender</p>
-      <p class="p">Address</p>
-      <p class="p">Work hour</p>
-      <hr>
-      <h3>Contact info</h3>
-      <p class="p">Number</p>
-      <p class="p">Email</p>
-             <a type="submit" class="gButton" onclick="location.href='/'">Log out</a>
-    </div>
-
+    <a type="submit" class="button" onclick="location.href='/gd'">Log out</a>
+    <form action="/Gurad" class="form" method="post">
     <div class="column3">
            <h2>Add visitor</h2>
            <label for="name">Name</label>
-           <input type="text" placeholder="Name" id="name"><br>
+           <input type="text" name='name' placeholder="Name" id="name"><br>
            <label for="number">Number</label>
-           <input type="text" placeholder="Number" id="number"><br>
+           <input type="text" name ='number'placeholder="Number" id="number"><br>
            <label for="email">Email</label>
-           <input type="text" placeholder="Email" id="email"><br>
+           <input type="email" name='email'placeholder="Email" id="email"><br>
            <label for="roomNo">Room number</label>
-           <input type="text" placeholder="Room number" id="roomNo">
-           <select name="Block" class="myselect2">
-             <option value="A">A</option>
+           <input type="number" name="rnum" placeholder="Room number" id="roomNo">
+           <input type="text" name="block" placeholder="block" id="roomNo">
+             <!-- <option value="A">A</option>
              <option value="B">B</option>
              <option value="C">C</option>
-           </select><br>
+           </select><br> -->
            <label for="date">Date</label>
-           <input type="date" id="date"><br>
+           <input type="date" name="date" id="date"><br>
            <label for="purpose">Purpose</label>
-           <input type="text" placeholder="Purpose" id="purpose"><br>
+           <input type="text" name='purpose' placeholder="Purpose" id="purpose"><br>
            <label for="Etime">Entry Time</label>
-           <input type="time" placeholder="Time" id="Etime"><br>
+           <input type="time" name='entime'placeholder="Time" id="Etime"><br>
            <label for="Extime">Exit Time</label>
-           <input type="time" placeholder="Time" id="Extime"><br><br>
-             <a type="submit" class="gButton" onclick="location.href='/Gurad'">Add Visitor</a>
+           <input type="time" name='extime' placeholder="Time" id="Extime"><br><br>
+             <button type="submit" class="gButton" onclick="location.href='/Gurad'">Add Visitor</button>
 
     </div>
     </div>

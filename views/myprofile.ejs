@@ -10,7 +10,7 @@
     <a type="submit" class="button" onclick="location.href='/Gurad'">Guard</a>
     <a type="submit" class="button" onclick="location.href='/visitor'">Visitors</a>
       <a type="submit" class="button"  onclick="location.href='/event'">Create Event</a>
-      <a type="submit" class="button" onclick="location.href='/'">Log out</a>
+      <a type="submit" class="button" onclick="location.href='/logout'">Log out</a>
   </form>
   </div><br><br><br>
 
@@ -28,40 +28,48 @@
        <p>Time</p>
       </div>
     </div>
-
+    <%
+    if(data[0].length!=0){
+    
+    %>
     <div class="column2">
       <h2 class="p">About</h2>
-        <h3>Name</h3>
-      <p class="p">Room number</p>
-      <p class="p">Block</p>
-      <p class="p">D.o.b</p>
-      <p class="p">Gender</p>
-      <p class="p">Religion</p>
-      <p class="p">Nationality</p>
+        <h3>Name : <%= data[0].NAME %></h3>
+      <p class="p">Room number : <%= data[0].ROOM_NO %> </p>
+      <p class="p">Block : <%= data[0].BLOCK %> </p>
+      <p class="p">D.o.b : <%= data[0].DOB %></p>
+      <p class="p">Gender : <%= data[0].GENDER %></p>
+      <p class="p">Religion : <%= data[0].RELIGION %></p>
+      <p class="p">Nationality : <%= data[0].NATIONALITY %></p>
       <hr>
       <h3>Contact info</h3>
-      <p class="p">Number</p>
-      <p class="p">Email</p>
+      <p class="p">Number : <%= data[0].PHONE_NO %></p>
 
     </div>
-
+    <% } %>
     <div class="column3">
       <div class="column3T">
-      <form>
+        <form action="/myprofile" class="form" method="post">
            <h2>Complaint Area</h2>
            <label for="name">Name</label>
-           <input type="text" placeholder="Name" id="name"><br>
+           <input type="text" name='name' placeholder="Name" id="name"><br>
            <label for="number">Number</label>
-           <input type="text" placeholder="Number" id="number"><br>
+           <input type="text" name="number" placeholder="Number" id="number"><br>
            <label for="email">Email</label>
-           <input type="text" placeholder="Email" id="email"><br>
-      </form>
+           <input type="email" name="email" placeholder="Email" id="email"><br>
+           <label for="name">Date</label>
+           <input type="date" name="date" placeholder="Date" id="name"><br>
+           <label for="name">Block</label>
+           <input type="text" name='block'placeholder="Block" id="name"><br>
+      
     </div>
     <div class="column3B">
-      <textarea class="text" placeholder="Write something..."></textarea>
-      <a type="submit" class="problem_box" onclick="location.href='/myprofile'"><strong>Submit</strong></a>
+      <textarea class="text" name = 'message' placeholder="Write something..."></textarea>
+   
+      <button type="submit" class="problem_box" onclick="location.href='/myprofile'"><strong>Submit</strong></button>
     </div>
   </div>
     </div>
+  </form>
   </body>
 </html>

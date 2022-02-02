@@ -14,8 +14,8 @@
           <a type="submit" class="button" onclick="location.href='/Admin'">Update</a>
           <a type="submit" class="button" onclick="location.href='/Account'">Add Tenant</a>
           <a type="submit" class="button" onclick="location.href='/event'">Create Event</a>
-          <a type="submit" class="button" onclick="location.href='/myprofile'">Complaints</a>
-          <a type="submit" class="button" onclick="location.href='/'">Log out</a>
+          <a type="submit" class="button" >Complaints</a>
+          <a type="submit" class="button" onclick="location.href='/ADlogout'">Log out</a>
       </form>
       </div><br><br><br>
 
@@ -34,23 +34,24 @@
 
           </div>
         </div>
-
+        <%
+        if(data[0].length!=0){
+        
+        %>
         <div class="column2">
           <h2 class="p">Basic</h2>
-            <h3>Name</h3>
-          <p class="p">Room number</p>
-          <p class="p">Block</p>
-          <p class="p">D.o.b</p>
-          <p class="p">Gender</p>
-          <p class="p">Religion</p>
-          <p class="p">Nationality</p>
+            <h3>Name : <%= data[0].NAME %></h3>
+          <p class="p">D.o.b : <%= data[0].DOB %></p>
+          <p class="p">Gender : <%= data[0].GENDER %></p>
+          <p class="p">Religion : <%= data[0].RELIGION %></p>
+          <p class="p">Nationality :<%= data[0].NATIONALITY %></p>
           <hr>
           <h3>Contact info</h3>
           <p class="p">Number</p>
           <p class="p">Email</p>
 
         </div>
-
+        <% } %>
         <div class="column3">
           <div class="column3T">
           <form action="E://New folder//apartment//profile.html">
