@@ -272,11 +272,11 @@ app.get('/visitor', function(req, res, next) {
 
 //GET METHOD FOR GUARD
 
-app.get('/Gurad', function(req, res, next) {
+app.get('/GuardProfile', function(req, res, next) {
   var sql='SELECT * FROM guard';
   con.query(sql, function (err, data, fields) {
   if (err) throw err;
-  res.render('Gurad', { title: 'guard', guard: data});
+  res.render('GuardProfile', { title: 'guard', guard: data});
 });
 });
 
@@ -295,6 +295,16 @@ app.get('/Visitor/delete/:id', function(req, res, next) {
 
 
 // Rendering the pages
+
+app.get('/Gurad',function(req,res){
+  var sql=`SELECT * FROM GUARD WHERE GUARD_ID = ${AUTH}`;
+  con.query(sql, function (err, data, fields) {
+  if (err) throw err;
+  console.log(data)
+  console.log(data[0].NAME)
+  res.render('Gurad', { title: 'Guard', data: data});
+  })
+})
 
 app.get('', function (req, res) {
   res.render(__dirname+"/views/login.ejs");

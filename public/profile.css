@@ -1,5 +1,5 @@
 body{
-background-image: url("E://New folder//apartment//New folder//creative-clay-textured-background-blue-border-diy-tie-dye-art-abstract-style.jpg");
+background-image: url("main.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -22,12 +22,12 @@ background-image: url("E://New folder//apartment//New folder//creative-clay-text
    padding: 10px 20px;
    text-decoration: none;
    margin-left: 6px;
-   margin-top: 7px;
+   margin-top: 5px;
    margin-bottom: 0px;
    cursor: pointer;
    border-radius: 5px;
    width:10%;
-   font-size: 1vmax;
+   font-size: 1.37vmax;
    position: center;
 }
 
@@ -45,6 +45,14 @@ background-image: url("E://New folder//apartment//New folder//creative-clay-text
   background-color: rgba(0,0,0,0.1);
   border-radius: 10px;
 }
+.columng1 {
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 86vh; /* Should be removed. Only for demonstration */
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
 
 .column1T
 {
@@ -55,6 +63,9 @@ background-image: url("E://New folder//apartment//New folder//creative-clay-text
   padding:2px;
 }
 
+input[type='text']:focus {
+  background-color: yellow;
+}
 
 .column1B
 {
@@ -68,7 +79,7 @@ background-image: url("E://New folder//apartment//New folder//creative-clay-text
 
 .column2 {
   float: left;
-  width: 46%;
+  width: 43%;
   padding: 10px;
   height: 86vh; /* Should be removed. Only for demonstration */
   background-color: rgba(0,0,0,0.1);
@@ -79,29 +90,29 @@ background-image: url("E://New folder//apartment//New folder//creative-clay-text
 
 .column3 {
   float: left;
-  width: 27%;
+  width: 30%;
   padding: 10px;
-  height: 86vh; /* Should be removed. Only for demonstration */
-  background-color: rgba(0,0,0,0.1);
+  height: auto; /* Should be removed. Only for demonstration */
+  background-color: transparent;
   border-radius: 10px;
 }
 
 .column3T
 {
-  width:80%;
+  width:100%;
   padding: 10px;
   height: 39vh;
   margin-top: 2px;
   padding: 2px;
 }
 
-
+``
 .column3B
 {
     margin-top: 14px;
-  width:80%;
+  width:100%;
   padding:10px;
-  height: 43vh;
+  height: auto;
   padding: 2px;
 }
 
@@ -144,7 +155,7 @@ background-image: url("E://New folder//apartment//New folder//creative-clay-text
    padding: 10px 27px;
    text-decoration: none;
     margin-top: 7px;
-    margin-right: 4px;
+    margin-left: 10px;
    cursor: pointer;
    border-radius: 1px;
    float: right;
@@ -164,14 +175,14 @@ input[type="text"]
   border-radius: 5px;
   height: 3vh;
   text-indent: 10px;
-  width:48%;
+  width:65%;
   margin-left: 7px;
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 10px;
   box-shadow: 10px 10px 10px 3px #090b6f85;
   background-color: rgb(23,23,20);
-  color:white;
+  color:blue;
   padding: auto;
 }
 
@@ -225,7 +236,7 @@ p.p{
 input[type=date]
 {
   height: 4vh;
-  width:45%;
+  width:50%;
   margin-left: 2px;;
   margin-right: auto;
   margin-top: 3.7%;

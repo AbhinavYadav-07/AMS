@@ -5,22 +5,53 @@
          <title>Guard Profile</title>
   </head>
   <body>
-   <div class="column">
-     <h1 align="center">Guard</h1>
-     <h2 class="p">Name</h2>
-       <h3>Basic</h3>
-     <p class="p">Salary</p>
-     <p class="p">Gate</p>
-     <p class="p">D.o.b</p>
-     <p class="p">Gender</p>
-     <p class="p">Address</p>
-     <p class="p">Work hour</p>
-     <p class="p">Religion</p>
-     <p class="p">Nationality</p>
-     <hr>
-     <h3>Contact info</h3>
-     <p class="p">Number</p>
-     <p class="p">Email</p>
-   </div>
+
+
+
+
+   <div class="out">
+     <div class="columng1">
+   <div class="table-data">
+     <br>
+     <h2>List Of Guard</h2>
+         <table border="1">
+      <tr>
+     <th>NAME</th>
+     <th>SALARY</th>
+     <th>GATE_NO</th>
+     <th>D.O.B</th>
+     <th>GENDER</th>
+     <th>ADDRESS</th>
+     <th>NUMBER</th>
+         </tr>
+
+ <%
+ if(guard.length!=0){
+ var i=1;
+ guard.forEach(function(data){
+ %>
+ <tr>
+     <!-- <td><%=i; %></td> -->
+     <td><%=data.NAME %></td>
+     <td><%=data.SALARY %></td>
+     <td><%=data.GATE_NO%></td>
+     <td><%=data.DOB %></td>
+     <td><%=data.GENDER %></td>
+     <td><%=data.ADDRESS %></td>
+     <td><%=data.PHONE_NO %></td>
+     <!-- <td><a href="/VISITOR/delete/<%=data.NAME%>">Delete</a></td> -->
+ </tr>
+ <%  i++; }) %>
+ <% } else{ %>
+     <tr>
+         <td colspan="7">No Data Found</td>
+     </tr>
+ <% } %>
+</table>
+</div>
+</div>
+
+
+
   </body>
   </html>

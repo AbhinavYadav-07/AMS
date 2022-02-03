@@ -9,12 +9,12 @@
       function timeout(){
             window.location.href = "/logout";
         }
-        const time = setTimeout(function(){timeout()},120000);
+        const time = setTimeout(function(){timeout()},300000);
         </script>
     </script>
 <div class="out">
   <form>
-    <a type="submit" class="button" onclick="location.href='/Gurad'">Guard</a>
+    <a type="submit" class="button" onclick="location.href='/GuardProfile'">Guard</a>
     <a type="submit" class="button" onclick="location.href='/visitor'">Visitors</a>
       <a type="submit" class="button"  onclick="location.href='/event'">Create Event</a>
       <a type="submit" class="button" onclick="location.href='/logout'">Log out</a>
@@ -37,7 +37,7 @@
     </div>
     <%
     if(data[0].length!=0){
-    
+
     %>
     <div class="column2">
       <h2 class="p">About</h2>
@@ -62,17 +62,18 @@
            <input type="text" name='name' placeholder="Name" id="name"><br>
            <label for="number">Number</label>
            <input type="text" name="number" placeholder="Number" id="number"><br>
-           <label for="email">Email</label>
-           <input type="email" name="email" placeholder="Email" id="email"><br>
+           <label for="text">Email</label>
+           <input type="text" name="email" placeholder="Email" id="email"><br>
            <label for="name">Date</label>
            <input type="date" name="date" placeholder="Date" id="name"><br>
            <label for="name">Block</label>
            <input type="text" name='block'placeholder="Block" id="name"><br>
-      
+
     </div>
     <div class="column3B">
+      <br><br><br><br>
       <textarea class="text" name = 'message' placeholder="Write something..."></textarea>
-   
+
       <button type="submit" class="problem_box" onclick="location.href='/myprofile'"><strong>Submit</strong></button>
     </div>
   </div>
