@@ -33,7 +33,7 @@ background-image: url("https://drive.google.com/uc?export=view&id=1M_ApPWVB3ZWKe
 
 .form1{
   border-radius: 10px;
-   height: 91.5vh;
+   height: auto;
    width: 100%;
    text-align: left;
    background-size: cover;
@@ -52,11 +52,29 @@ input[type=text]{
   margin-right: auto;
   margin-top: 3.7%;
   text-align:left;
+
+  border-bottom: 2px solid black;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  border-radius: 6px;
+  color:black;
+  display: inline;
+  float: inherit;
+}
+
+input[type=number]{
+  height: 3.9vh;
+  width:30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.7%;
+  text-align:left;
   border-radius: 6px;
   border-bottom: 2px solid black;
   box-shadow: 10px 10px 10px 3px #090b6f85;
-  background-color: white;
+
   color:black;
+  display: inline;
+  float: inherit;
 }
 
 ::placeholder{
@@ -82,6 +100,8 @@ input[type=date]
   background-color:white;
   color: black;
   text-align: left;
+  display: inline;
+  float: inherit;
 }
 
 select{
@@ -140,29 +160,31 @@ label{
   margin-left: 5%;
   margin-top: 10%;
   color: white;
+  float: inherit;
+
 }
 
 h2{
   font-size: 2vmax;
   line-height: 1;
   font-weight: 400;
-  margin-left:auto ;
+  margin-left: 10px ;
   margin-right:auto;
   margin-top: 17px;
   margin-bottom: 10px;
-  color: Black;
-  text-align: center;
+  color: Yellow;
+  text-align:left;
 }
 
 
 
 .formG{
-  width:50%;
+  width:70%;
     background: #FFFFFF;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  height: 107.5vh;
+  height: auto;
   padding: 5px;
   text-align: left;
   overflow: hidden;
@@ -177,7 +199,7 @@ h2{
 
 .form1G{
   border-radius: 10px;
-   height: 107.5vh;
+   height: auto;
    width: 100%;
    text-align: left;
    background-size: cover;

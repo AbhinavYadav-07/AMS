@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+         <link rel="stylesheet" type="text/css" href="profile.css">
+  </head>
+  <body>
+    <script>
+      function timeout(){
+            window.location.href = "/ADlogout";
+        }
+        const time = setTimeout(function(){timeout()},300000);
+        </script>
+    <div class="out">
+      <form>
+        <label for="guard">
+             <!-- <select class="myselect" name="guard" onchange="location:this.value" onclick="location.href='/'"> -->
+          <a type="submit" class="button" onclick="location.href='/GuardAccount'">Add Guard</a>
+          <a type="submit" class="button" onclick="location.href='/Admin'">Remove Guard</a>
+          <a type="submit" class="button" onclick="location.href='/Admin'">Update</a>
+          <a type="submit" class="button" onclick="location.href='/Account'">Add Tenant</a>
+          <a type="submit" class="button" onclick="location.href='/event'">Create Event</a>
+          <a type="submit" class="button" >Complaints</a>
+          <a type="submit" class="button" onclick="location.href='/ADlogout'">Log out</a>
+      </form>
+      </div><br><br><br>
+
+
+      <div class="row">
+        <div class="column1">
+          <div class="column1T">
+              <img id=""><p>your image</p>
+          </div>
+          <div class="column1B">
+           <h2 class="one">Upcoming Events</h2><br>
+           <p>Select Date <input type="date"></p>
+           <p>Event Name</p>
+           <p>Venue</p>
+            <p>Time</p>
+
+          </div>
+        </div>
+        <%
+        if(data[0].length!=0){
+
+        %>
+        <div class="column2">
+          <h2 class="p">Basic</h2>
+            <h3>Name : <%= data[0].NAME %></h3>
+          <p class="p">D.o.b : <%= data[0].DOB %></p>
+          <p class="p">Gender : <%= data[0].GENDER %></p>
+          <p class="p">Religion : <%= data[0].RELIGION %></p>
+          <p class="p">Nationality :<%= data[0].NATIONALITY %></p>
+          <hr>
+          <h3>Contact info</h3>
+          <p class="p">Number</p>
+          <p class="p">Email</p>
+
+        </div>
+        <% } %>
+        <div class="column3">
+          <div class="column3T">
+          <form action="E://New folder//apartment//profile.html">
+               <h2>Room info</h2>
+               <label for="num">Room number</label><br>
+               <input type="text" placeholder="Room number" id="num"><br>
+               <label for="block">Block</label><br>
+               <input type="text" placeholder="Block" id="block"><br><br>
+                 <button type="submit" class="vButton">Search</button>
+          </form>
+        </div>
+
+      </div>
+        </div>
+
+
+</body>
+</html>

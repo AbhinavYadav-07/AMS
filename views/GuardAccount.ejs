@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Create Account</title>
+     <link rel="stylesheet" type="text/css" href="\account.css">
+</head>
+<body>
+          <h1>Let's get started</h1>
+  <div class="formG">
+    <div class="form1G">
+      <h1>Personal</h1>
+      <form action="/GuardAccount"  method="post">
+        <label for="FirstName"><strong>Name</strong></label>
+        <input type="text" name="name" placeholder="Name" id="FirstName">
+        <label for="Number"><strong>Phone number</strong></label>
+        <input type="text" name="number" placeholder="Phone number" id="Number"><br>
+        <label for="Dob"><strong>D.O.B</strong></label>
+        <input type="date" name="date" placeholder="D.O.B" id="Dob">
+        <label for="id"><strong>Guard_id</strong></label>
+        <input type="number" name="id" placeholder="Guard_id" id="id"><br>
+        <label for="gender"><strong>Gender</strong></label>
+        <input type="text" name="gender" placeholder="Gender" id="gender">
+         <!-- <option value="Male">Male</option>
+         <option value="Female">Female</option>
+         <option value="TransGender">TransGender</option>
+       </select><br> -->
+       <label for="Salary"><strong>Salary</strong></label>
+       <input type="number" name="salary" placeholder="Salary" id="Salary"><br>
+       <label for="Adhaar"><strong>Adhaar Number</strong></label>
+       <input type="number" name="adhar" placeholder="Adhaar Number" id="Adhaar">
+       <label for="address"><strong>Address</strong></label>
+       <input type="text" name="address" placeholder="Address" id="Address"><br>
+       <label for="Nationality"><strong>Nationality</strong></label>
+       <input type="text" name="nat" placeholder="Nationality" id="Nationality">
+       <label for="Religion"><strong>Religion</strong></label>
+       <input type="text" name="rel" placeholder="Religion" id="Religion"><br>
+       <label for="Gate"><strong>Gate</strong></label>
+       <input type="text" name="gate" placeholder="Gate" if="Gate">
+       <label for="Password"><strong>Password</strong></label>
+      <input type="text" name="pass" placeholder="Password" id="Password"><br>
+      <button type="submit" class="button"  onclick="location.href='/Admin'">Sign Up</button>
+      </form>
+</div>
+</div>
+</body>
+</html>

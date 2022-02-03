@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ang="en" dir="ltr">
+<head>
+  <script>
+    function timeout(){
+          window.location.href = "/gd";
+      }
+      const time = setTimeout(function(){timeout()},300000);
+      </script>
+    <meta charset="utf-8">
+         <link rel="stylesheet" type="text/css" href="\profile.css">
+  </head>
+  <body>
+
+    
+    <div class="column">
+      <h1 align="center">Guard</h1>
+      <%
+    if(data[0].length!=0){
+
+    %>
+      <h2 class="p">Name : <%= data[0].NAME %></h2>
+        <h3>Basic</h3>
+      <p class="p">Salary : <%= data[0].SALARY %></p>
+      <p class="p">Gate : <%= data[0].GATE_NO %></p>
+      <p class="p">D.o.b : <%= data[0].DOB %></p>
+      <p class="p">Gender : <%= data[0].GENDER %></p>
+      <p class="p">Address : <%= data[0].ADDRESS %></p>
+      <p class="p">ADHAAR : <%= data[0].ADHAAR %></p>
+      <p class="p">Religion : <%= data[0].RELIGION %></p>
+      <p class="p">Nationality : <%= data[0].NATIONALITY %></p>
+      <hr>
+      <h3>Contact info</h3>
+      <p class="p">Number : <%= data[0].PHONE_NO %></p>
+      
+    </div>
+    <% } %>
+    <a type="submit" class="button" onclick="location.href='/gd'">Log out</a>
+    <form action="/Gurad" class="form" method="post">
+    <div class="column3"><br>
+           <h2>Add visitor</h2>
+           <label for="name">Name</label>
+           <input type="text" name='name' placeholder="Name" id="name"><br>
+           <label for="number">Number</label>
+           <input type="text" name ='number'placeholder="Number" id="number"><br>
+           <label for="email">Email</label>
+           <input type="email" name='email'placeholder="Email" id="email"><br>
+           <label for="roomNo">Room number</label>
+           <input type="number" name="rnum" placeholder="Room number" id="roomNo">
+           <input type="text" name="block" placeholder="block" id="roomNo">
+             <!-- <option value="A">A</option>
+             <option value="B">B</option>
+             <option value="C">C</option>
+           </select><br> -->
+           <label for="date">Date</label>
+           <input type="date" name="date" id="date"><br>
+           <label for="purpose">Purpose</label>
+           <input type="text" name='purpose' placeholder="Purpose" id="purpose"><br>
+           <label for="Etime">Entry Time</label>
+           <input type="time" name='entime'placeholder="Time" id="Etime"><br>
+           <label for="Extime">Exit Time</label>
+           <input type="time" name='extime' placeholder="Time" id="Extime"><br><br>
+             <button type="submit" class="gButton" onclick="location.href='/Gurad'">Add Visitor</button>
+
+    </div>
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+         <link rel="stylesheet" type="text/css" href="\profile.css">
+  </head>
+  <body>
+    <div class="table-data">
+      <h2>List Of Visitor</h2>
+          <table border="1">
+       <tr>     
+      <th>NAME</th>
+      <th>DATE</th>
+      <th>ENTRY TIME</th>
+      <th>EXIT TIME</th>
+      <th>PURPOSE</th>
+      <th>Block</th>
+      <th>NUMBER</th>
+      <th>EMAIL</th>
+          </tr>
+  
+  <%
+  if(visitor.length!=0){
+  var i=1;
+  visitor.forEach(function(data){
+  %>
+  <tr>
+      <!-- <td><%=i; %></td> -->
+      <td><%=data.NAME %></td>
+      <td><%=data.DATE %></td>
+      <td><%=data.ENTRY_TIME%></td>
+      <td><%=data.EXIT_TIME %></td>
+      <td><%=data.PURPOSE %></td>
+      <td><%=data.BLOCK %></td>
+      <td><%=data.PHONE_NO %></td>
+      <td><%=data.EMAIL %></td>
+      <td><a href="/Visitor/delete/<%=data.TENANT_ID %>">Delete</a></td>
+  </tr>
+  <%  i++; }) %>
+  <% } else{ %>
+      <tr>
+          <td colspan="7">No Data Found</td>
+      </tr>
+  <% } %>
+</table>
+</div>
+    </div>
+
+</body>
+</html>
