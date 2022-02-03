@@ -209,3 +209,96 @@ h2{
   overflow: hidden;
 
 }
+
+h2.tab{
+  text-align: center;
+  font-size: 3vmax;
+  color:Yellow;
+  font-style:bold;
+  margin-top: 3px;
+}
+/* for Tenant log in */
+
+input[type="number"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:25%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: white;
+  color:black;
+  padding: auto;
+}
+
+input[type="number"].G:hover
+{
+  background-color: linen;
+}
+
+input[type="character"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:25%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: white;
+  color:black;
+  padding: auto;
+}
+
+input[type="character"].G:hover
+{
+  background-color: linen;
+}
+
+input[type="text"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:25%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: white;
+  color:black;
+  padding: auto;
+}
+
+input[type="text"].G:hover
+{
+  background-color: linen;
+}
+
+input[type="date"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:25%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: Red;
+  color:black;
+  padding: auto;
+}
+
+input[type="date"].G:hover
+{
+  background-color: Tomato;
+}

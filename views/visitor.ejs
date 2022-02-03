@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+1<!DOCTYPE html>
 <html ang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
@@ -6,9 +6,9 @@
   </head>
   <body>
     <div class="table-data">
-      <h2>List Of Visitor</h2>
-          <table border="1">
-       <tr>     
+      <h2 class="tab">List Of Visitor</h2>
+          <table>
+       <tr>
       <th>NAME</th>
       <th>DATE</th>
       <th>ENTRY TIME</th>
@@ -17,8 +17,9 @@
       <th>Block</th>
       <th>NUMBER</th>
       <th>EMAIL</th>
+      <th>DELETE</th>
           </tr>
-  
+
   <%
   if(visitor.length!=0){
   var i=1;
@@ -34,7 +35,7 @@
       <td><%=data.BLOCK %></td>
       <td><%=data.PHONE_NO %></td>
       <td><%=data.EMAIL %></td>
-      <td><a href="/Visitor/delete/<%=data.TENANT_ID %>">Delete</a></td>
+      <td><a href="/Visitor/delete/<%=data.TENANT_ID %>"><button class="tabButton">Delete</button></a></td>
   </tr>
   <%  i++; }) %>
   <% } else{ %>

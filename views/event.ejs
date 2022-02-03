@@ -7,16 +7,21 @@
   <body>
     <form action="/event" class="form" method="post">
     <div class="columnEvent">
-      <p class="tenant">Create Event</p>
+      <h2 class="event">Create Event</h2>
       <hr>
+      <h3 class="event">Event Details</h3>
       <label for="ename"  class="labelT"><strong>Event Name</strong></label>
       <input type="text" name = 'name' class ="event" placeholder="Event Name" id="ename"><br>
       <label for="ed&t" class="labelT"><strong>Date/Time</strong></label>
       <input type="date" name = 'date'class="event" id="date">
       <input type="time" name = 'time' class="event" id="Etime"><br>
+      <label for="number" class="labelT">Venue</label>
+      <input type="text" name = 'venue' class ="event" placeholder="Venue" id="number"><br><br>
+      <hr>
+      <h3 class="event">Your Information</h3>
       <label for="fnumber" class="labelT"><strong>Flat number</strong></label>
       <input type="text" name = 'fnum' class ="event" placeholder="Flat number" id="fnumber">
-      <input type="text" name = 'block' class ="block" placeholder="Block" >
+      <input type="text" name = 'block' class ="Tenant" placeholder="Block" id="fnumber"><br>
         <!-- <option value="A">A</option>
         <option value="B">B</option>
         <option value="C">C</option> -->
@@ -24,11 +29,11 @@
       <label for="number" class="labelT">Contact Number</label>
       <input type="text" name = 'number' class ="event" placeholder="Contact Number" id="number"><br>
 
-      <label for="number" class="labelT">Venue</label>
-      <input type="text" name = 'venue' class ="event" placeholder="Venue" id="number"><br>
-      <label for="fnumber" class="labelT"><strong>Send to flat number and block</strong></label>
-      <input type="text" name="rnum" class ="event" placeholder="Flat number" id="fnumber">
-      <input name="Block" name="rblock" class="myselect2">
+      <hr>
+      <h3 class="event">Receiver's Information</h3>
+      <label for="fnumber" class="labelT"><strong>Flat Number</strong></label>
+      <input type="text" name="rnum" class ="event" placeholder="Flat Number" id="fnumber">
+      <input type="text" name="Block" name="rblock" id="block" class="Tenant"  placeholder="Block">
         <!-- <option value="A">A</option>
         <option value="B">B</option>
         <option value="C">C</option>

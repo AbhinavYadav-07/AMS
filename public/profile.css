@@ -103,10 +103,11 @@ input[type='text']:focus {
   padding: 10px;
   height: 39vh;
   margin-top: 2px;
+  margin-left: 30px;
+  margin-bottom: 28PX;
   padding: 2px;
 }
 
-``
 .column3B
 {
     margin-top: 14px;
@@ -121,17 +122,6 @@ input[type='text']:focus {
   content: "";
   display: table;
   clear: both;
-}
-
-.column{
-  margin-top:50px;
-  margin-left:auto;
-  margin-right: auto;
-  width: 46%;
-  padding: 10px;
-  height: 86vh; /* Should be removed. Only for demonstration */
-  background-color: rgba(0,0,0,0.1);
-  border-radius: 10px;
 }
 
 .text
@@ -185,7 +175,67 @@ input[type="text"]
   color:blue;
   padding: auto;
 }
+/* for admin search room button */
 
+.column3Ta
+{
+  border-radius: 10px;
+  width:100%;
+  padding: 8px;
+  height: 39vh;
+  margin-top: 2px;
+  margin-left: 10px;
+  margin-bottom: 28PX;
+  padding: 2px;
+  background-image: linear-gradient(#f2709c,#ff9472);
+}
+input[type="text"].ad
+{
+  border-radius: 10px;
+  height: 4vh;
+  text-indent: 10px;
+  width:65%;
+  margin-left: 10%;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: rgb(23,23,20);
+  color:blue;
+  padding: auto;
+}
+input[type="text"].ad:hover
+{
+  background-color: linen;
+}
+.ad{
+  color:white;
+  font-size: 1.02vmax;
+  margin-left: 10%;
+}
+.tabButtonAdm
+{
+   background-color: tomato;
+   border: none;
+   color: white;
+   padding:10px;
+   text-decoration: none;
+   cursor: pointer;
+   border-radius: 1px;
+   font-size: 1.8vh;
+   border-radius: 20px;
+   width:70%;
+   padding: auto;
+   margin-left: 16%;
+}
+.tabButtonAdm:hover
+{
+  background-color: red;
+}
+
+
+/* ends here */
+.labelT{
+  color:white;
+  font-size: 1.02vmax;
+}
 
 h2.one{
   text-align: center;
@@ -195,11 +245,24 @@ h2.one{
   margin-top:10px;
   padding: 3px;
 }
+h2.event{
+  text-align: center;
+  font-size: 3vmax;
+  color:blackS;
+  font-style:bold;
+  color:yellow;
+}
+ h3.event{
+     text-align: center;
+     font-size: 2vmax;
+     color:yellow;
+     font-style:bold;
+ }
 
 h2{
   text-align: center;
-  font-size: 2vmax;
-  color:blackS;
+  font-size: 2.5vmax;
+  color:black;
   font-style:bold;
 }
 
@@ -427,6 +490,7 @@ input[type="text"].Tenant:hover
 .labelT{
   color:white;
   font-size: 1.02vmax;
+
 }
 .tButton
 {
@@ -462,10 +526,10 @@ p.tenant{
   margin-top:50px;
   margin-left:auto;
   margin-right: auto;
-  width: 35%;
+  width: 50%;
   padding: 10px;
-  height: 66vh; /* Should be removed. Only for demonstration */
-  background-color: rgba(0,0,0,0.6);
+  height: auto;
+  background-color: transparent;
   border-radius: 10px;
 }
 
@@ -511,7 +575,7 @@ input[type="date"].event:hover
 
 input[type="text"].event{
   height: 4vh;
-  width:30%;
+  width:40%;
   margin-left: 2px;;
   margin-right: auto;
   margin-top: 3.7%;
@@ -528,4 +592,239 @@ input[type="text"].event{
 input[type="text"].event:hover
 {
   background-color: linen;
+}
+/* table */
+table{
+   border:3px;
+   border-radius: 5px;
+   border-bottom: 2px solid black;
+   margin:auto;
+   width:95%;
+   color: black;
+   height: auto;
+   font-size: 1.1vmax;
+   box-shadow: 10px 10px;
+}
+th{
+  height: 10px;
+  color:white;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+}
+td{
+  text-align:center;
+  padding:7px;1
+  height: 50px;
+  width:3%;
+}
+h2.tab{
+  text-align: center;
+  font-size: 3vmax;
+  color:white;
+  font-style:bold;
+  margin-top: 3px;
+}
+/* tr:hover{
+background-color: blu;
+} */
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){background-color: #c1c1c1}
+
+.tabButton
+{
+   background-color: tomato;
+   border: none;
+   color: white;
+   padding:10px;
+   text-decoration: none;
+   cursor: pointer;
+   border-radius: 1px;
+   font-size: 1.8vh;
+   border-radius: 20px;
+   width:65%;
+   padding: auto;
+}
+.tabButton:hover
+{
+  background-color: red;
+}
+ /* css for guard */
+h1.guardH{
+  color:lightpink;
+  font-size: 3vmax;
+  text-align:center;
+}
+h2.guardH{
+  color:white;
+  font-size: 2vmax;
+  text-align:left;
+}
+h3.guardH{
+  color:white;
+  font-size: 1.8vmax;
+  text-align:center;
+}
+.column{
+  margin-top:10px;
+  width: 68%;
+  float:left;
+  padding: 10px;
+  height: auto;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.columnG{
+  margin-top:1px;
+  width: 28%;
+  float:right;
+  padding: 10px;
+  height: auto;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+input[type="email"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:67%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: black;
+  color:black;
+  padding: auto;
+}
+
+input[type="email"].G:hover
+{
+  background-color: linen;
+}
+input[type="number"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:30%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: black;
+  color:black;
+  padding: auto;
+}
+
+input[type="number"].G:hover
+{
+  background-color: linen;
+}
+
+input[type="character"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:15%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: black;
+  color:black;
+  padding: auto;
+}
+
+input[type="character"].G:hover
+{
+  background-color: linen;
+}
+
+input[type="text"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:67%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: black;
+  color:black;
+  padding: auto;
+}
+
+input[type="text"].G:hover
+{
+  background-color: linen;
+}
+
+input[type="date"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:50%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: Red;
+  color:black;
+  padding: auto;
+}
+
+input[type="date"].G:hover
+{
+  background-color: Tomato;
+}
+input[type="time"].G
+{
+  border-radius: 5px;
+  height: 4.5vh;
+  text-indent: 10px;
+  width:50%;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px 3px #090b6f85;
+  background-color: black;
+  color:white;
+  padding: auto;
+}
+
+input[type="time"].G:hover
+{
+  background-color: Grey;
+}
+
+.g
+{
+   background-color: Green;
+   border: none;
+   color: white;
+   padding: 10px 27px;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 1px;
+   font-size: 2.8vh;
+   border-radius: 20px;
+   width:90%;
+   margin-left: 20px;
+   padding: auto;
+}
+.g:hover
+{
+  background-color: DarkGreen;
 }

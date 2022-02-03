@@ -10,46 +10,47 @@
 </head>
 
 <body>
-          <h1>LET'S GET STARTED</h1>
+          <h1>LET'S GET STARTED !</h1>
   <form action="/Account" method="post">
     <div class="form1">
-      <h1>Create Account</h1>
-      <h2>Profile</h2>
+      <hr>
+      <h2 class="tab">Profile</h2>
 
         <label for="FirstName"><strong>Name</strong></label>
-        <input type="text" name="name" placeholder="Name" id="FirstName">
+        <input type="text" class ="G" name="name" placeholder="Name" id="FirstName">
         <label for="Number"><strong>Phone number</strong></label>
-        <input type="text" name="number" placeholder="Phone number" id="Number"><br>
+        <input type="text" class ="G" name="number" placeholder="Phone number" id="Number"><br>
         <label for="Dob"><strong>D.O.B</strong></label>
-        <input type="date" name="date" placeholder="D.O.B" id="Dob">
+        <input type="date" class ="G" name="date" placeholder="D.O.B" id="Dob">
         <label for="gender"><strong>Gender</strong></label>
-        <input type="text" name="gender" placeholder="Gender" id="gender"><br>
+        <input type="text" class ="G" name="gender" placeholder="Gender" id="gender"><br>
        <!-- <select name="gender">
          <option value="Male">Male</option>
          <option value="Female">Female</option>
          <option value="TransGender">TransGender</option>
        </select><br> -->
        <label for="Occupation"><strong>Occupation</strong></label>
-       <input type="text" name='occ'placeholder="Occupation" id="Occupation">
+       <input type="text" class ="G" name='occ'placeholder="Occupation" id="Occupation">
        <!-- <input type="text" name='deg'placeholder="Designation" id="Occupation"><br> -->
        <label for="Nationality"><strong>Nationality</strong></label>
-       <input type="text" name="nat" placeholder="Nationality" id="Nationality"><br>
+       <input type="text" class ="G" name="nat" placeholder="Nationality" id="Nationality"><br>
        <label for="Religion"><strong>Religion</strong></label>
-       <input type="text" name='rel'placeholder="Religion" id="Religion">
+       <input type="text" class ="G" name='rel'placeholder="Religion" id="Religion">
        <label for="Flat number"><strong>Flat number</strong></label>
-       <input type="text" name="fnum" placeholder="Flat number" id="Flat number"><br>
+       <input type="text" class ="G" name="fnum" placeholder="Flat number" id="Flat number"><br>
        <label for="Block"><strong>Block</strong></label>
-       <input type="text" name="Block" placeholder="Block" id="Block"><br><br><br>
+       <input type="text" class ="G" name="Block" placeholder="Block" id="Block"><br><br><br>
       <!-- <select name="Block">
         <option value="A">A</option>
         <option value="B">B</option>
         <option value="C">C</option>
       </select><br> -->
-      <h2>Create Id<h2>
+      <hr>
+      <h2 class="tab">Create Id<h2>
       <label for="Password"><strong>Create ID</strong></label>
       <input type="text" name="id" placeholder="ID" id="ID">
       <label for="Password"><strong>Password</strong></label>
-      <input type="text" name="pass" placeholder="Password" id="Password"><br><br>
+      <input type="text" name="pass" placeholder="Password" id="Password"><br><br><br></br>
       <button type="submit" class="button" onclick="location.href='/Admin'">Sign Up</button>
       </form>
 </div>
