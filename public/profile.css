@@ -39,7 +39,7 @@ background-image: url("main.jpeg");
 
 .column1 {
   float: left;
-  width: 23%;
+1  width: 23%;
   padding: 10px;
   height: 86vh; /* Should be removed. Only for demonstration */
   background-color: rgba(0,0,0,0.1);
